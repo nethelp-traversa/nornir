@@ -1,0 +1,51 @@
+---
+
+DT-01-DT1003:
+    hostname: '10.23.255.16'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+DT-02-DT2124:
+    hostname: '10.23.255.26'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-B-PTB014:
+    hostname: '10.23.255.6'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-03-PT3E02:
+    hostname: '10.23.255.35'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-05-PT5052:
+    hostname: '10.23.255.55'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-08-PT8052:
+    hostname: '10.23.255.85'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-09-PT9052:
+    hostname: '10.23.255.95'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+PT-10-PT10052:
+    hostname: '10.23.255.105'
+    port: 22
+    platform: 'hp_procurve'
+    groups:
+        - 'hp'
+

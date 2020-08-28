@@ -1,0 +1,238 @@
+2020-08-28 15:34:13,303 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run'} on 1 hosts
+2020-08-28 15:44:03,486 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run'} on 8 hosts
+2020-08-28 15:47:44,191 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | in hostname'} on 8 hosts
+2020-08-28 15:50:39,359 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | in hostname'} on 8 hosts
+2020-08-28 15:54:00,610 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': ['sh run | in hostname', 'sh ip']} on 8 hosts
+2020-08-28 15:54:07,005 - nornir.core.task -    ERROR -      start() - Host 'DT-01-DT1003': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,006 - nornir.core.task -    ERROR -      start() - Host 'PT-05-PT5052': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,054 - nornir.core.task -    ERROR -      start() - Host 'PT-03-PT3E02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,136 - nornir.core.task -    ERROR -      start() - Host 'PT-B-PTB014': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,155 - nornir.core.task -    ERROR -      start() - Host 'PT-08-PT8052': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,181 - nornir.core.task -    ERROR -      start() - Host 'PT-09-PT9052': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,186 - nornir.core.task -    ERROR -      start() - Host 'DT-02-DT2124': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:54:07,188 - nornir.core.task -    ERROR -      start() - Host 'PT-10-PT10052': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/utilities.py", line 347, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1404, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 1558, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2020-08-28 15:57:03,214 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip'} on 8 hosts
+2020-08-28 16:00:00,510 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'in hostname'} on 8 hosts
+2020-08-28 16:00:40,192 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in hostname'} on 8 hosts
+2020-08-28 16:03:39,938 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in hostname'} on 8 hosts
+2020-08-28 16:05:26,142 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in hostname'} on 8 hosts
+2020-08-28 16:06:51,400 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip'} on 8 hosts
+2020-08-28 16:09:52,743 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip'} on 8 hosts
+2020-08-28 16:12:28,236 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip'} on 8 hosts
+2020-08-28 16:14:26,512 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip | in 900'} on 8 hosts
+2020-08-28 16:14:50,825 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip | in MANAGEMENT'} on 8 hosts
+2020-08-28 16:15:33,882 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh vlan '} on 8 hosts
+2020-08-28 16:15:58,128 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh vlan'} on 8 hosts
+2020-08-28 16:31:35,414 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip  | in Gateway'} on 8 hosts
+2020-08-28 16:32:13,314 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh span | in Version'} on 8 hosts
+2020-08-28 16:32:35,835 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ll i r'} on 8 hosts
+2020-08-28 16:33:02,379 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in qos'} on 8 hosts
+2020-08-28 16:33:37,334 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in snmp'} on 8 hosts
+2020-08-28 16:34:54,588 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in "snmp-server host"'} on 8 hosts
+2020-08-28 16:35:23,747 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in snmp loca'} on 8 hosts
+2020-08-28 16:35:43,504 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in location'} on 8 hosts
+2020-08-28 16:36:32,201 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip dns'} on 8 hosts
+2020-08-28 16:38:12,483 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip dns | in HP | 172.18.'} on 8 hosts
+2020-08-28 16:39:18,522 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip dns | in HP | "172.18"'} on 8 hosts
+2020-08-28 16:39:36,975 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip dns | in HP'} on 8 hosts
+2020-08-28 16:40:26,589 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh sntp | in Tiem Sync'} on 8 hosts
+2020-08-28 16:40:28,132 - nornir.core.task -    ERROR -      start() - Host 'DT-02-DT2124': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/paramiko/packet.py", line 301, in read_all
+    x = self.__socket.recv(n)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 298, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 341, in __init__
+    self._open()
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 346, in _open
+    self.establish_connection()
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 951, in establish_connection
+    term="vt100", width=width, height=height
+  File "/usr/local/lib/python3.6/site-packages/paramiko/client.py", line 547, in invoke_shell
+    chan.invoke_shell()
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 72, in _check
+    return func(self, *args, **kwds)
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 230, in invoke_shell
+    self._wait_for_event()
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 1226, in _wait_for_event
+    raise e
+  File "/usr/local/lib/python3.6/site-packages/paramiko/transport.py", line 2055, in run
+    ptype, m = self.packetizer.read_message()
+  File "/usr/local/lib/python3.6/site-packages/paramiko/packet.py", line 459, in read_message
+    header = self.read_all(self.__block_size_in, check_rekey=True)
+  File "/usr/local/lib/python3.6/site-packages/paramiko/packet.py", line 319, in read_all
+    raise EOFError()
+EOFError
+
+2020-08-28 16:40:28,271 - nornir.core.task -    ERROR -      start() - Host 'DT-01-DT1003': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 298, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 341, in __init__
+    self._open()
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 347, in _open
+    self._try_session_preparation()
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 772, in _try_session_preparation
+    self.session_preparation()
+  File "/usr/local/lib/python3.6/site-packages/netmiko/hp/hp_procurve.py", line 140, in session_preparation
+    self.write_channel(self.RETURN)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 450, in write_channel
+    self._write_channel(out_data)
+  File "/usr/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 408, in _write_channel
+    self.remote_conn.sendall(write_bytes(out_data, encoding=self.encoding))
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 846, in sendall
+    sent = self.send(s)
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 801, in send
+    return self._send(s, m)
+  File "/usr/local/lib/python3.6/site-packages/paramiko/channel.py", line 1198, in _send
+    raise socket.error("Socket is closed")
+OSError: Socket is closed
+
+2020-08-28 16:40:41,271 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh sntp | in Time Sync'} on 8 hosts
+2020-08-28 16:40:59,134 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh sntp | in 172.18'} on 8 hosts
+2020-08-28 16:41:15,229 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in ntp'} on 8 hosts
+2020-08-28 16:41:43,160 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in telnet'} on 8 hosts
+2020-08-28 16:42:08,343 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in ssh'} on 8 hosts
+2020-08-28 16:42:24,388 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip ssh'} on 8 hosts
+2020-08-28 16:42:56,845 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip ssh | in SSH'} on 8 hosts
+2020-08-28 16:43:14,731 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run | in web'} on 8 hosts
+2020-08-28 16:44:05,807 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh fl | in   :'} on 8 hosts
+2020-08-28 16:44:30,540 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh fl | in Primary Image'} on 8 hosts
+2020-08-28 16:44:57,094 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh fl | in Secondary'} on 8 hosts
+2020-08-28 16:46:11,634 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh run int Trk1'} on 8 hosts
+2020-08-28 16:49:16,838 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh tr'} on 8 hosts
+2020-08-28 16:49:40,413 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh vlan 900'} on 8 hosts
+2020-08-28 16:51:07,672 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'wr m'} on 8 hosts
+2020-08-28 16:51:59,919 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'wr m'} on 8 hosts
+2020-08-28 16:52:41,778 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'wr m'} on 8 hosts
+2020-08-28 16:54:29,548 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'wr m'} on 8 hosts
+2020-08-28 16:57:13,418 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh vsf'} on 8 hosts
